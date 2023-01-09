@@ -14,8 +14,6 @@ int main() {
     return 0;
 }
 
-
-
 string caesarCipher (string txt, int stp)
 {
     if (stp==0)
@@ -24,6 +22,7 @@ string caesarCipher (string txt, int stp)
     for (int i = 0; i < txt.length(); i++)
     {   //If there's space, the program will let it as it is
         if (isspace(txt[i])) continue;
+        //The program will only work on letters, it means that the numbers and symbols are going to be the same.
         //Condition for small letters
         if(txt[i]>='a' && txt[i]<='z'){
             txt[i] +=stp;
